@@ -18,13 +18,13 @@ public class RemoteControlInvoker {
         Command ceilingFanOnCommand = new CeilingFanOnCommand(ceilingFan);
         Command ceilingFanOffCommand = new CeilingFanOffCommand(ceilingFan);
 
-
         //set remote slots
         remoteControl.setCommand(0,livingRoomLightOnCommand,livingRoomLightOffCommand);
         remoteControl.setCommand(1,kitchenRoomLightOnCommand,kitchenRoomLightOffCommand);
         remoteControl.setCommand(2,ceilingFanOnCommand,ceilingFanOffCommand);
         remoteControl.setCommand(3,stereoWithCdOnCommand,stereoOffCommand);
 
+        System.out.println(remoteControl);
         //button was pressed
         remoteControl.buttonPressed();
     }
