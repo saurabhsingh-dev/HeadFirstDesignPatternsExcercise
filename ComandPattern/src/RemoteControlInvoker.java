@@ -26,6 +26,13 @@ public class RemoteControlInvoker {
 
         System.out.println(remoteControl);
         //button was pressed
-        remoteControl.buttonPressed();
+        //remoteControl.buttonPressed();
+        remoteControl.onButtonPressed(0);
+        remoteControl.onButtonPressed(1);
+        remoteControl.undoButtonPressed();
+        remoteControl.offButtonPressed(0);
+        //System.out.println(remoteControl);
+        remoteControl.undoButtonPressed();
+        System.out.println(remoteControl);
     }
 }
